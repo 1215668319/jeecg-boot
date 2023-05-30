@@ -17,8 +17,8 @@ import org.jeecg.common.constant.FillRuleConstant;
 import org.jeecg.common.constant.SymbolConstant;
 import org.jeecg.common.system.vo.LoginUser;
 import org.jeecg.common.util.FillRuleUtil;
-import org.jeecg.common.util.YouBianCodeUtil;
 import org.jeecg.common.util.oConvertUtils;
+import org.jeecg.common.util.YouBianCodeUtil;
 import org.jeecg.config.mybatis.MybatisPlusSaasConfig;
 import org.jeecg.modules.system.entity.*;
 import org.jeecg.modules.system.mapper.*;
@@ -27,7 +27,6 @@ import org.jeecg.modules.system.model.SysDepartTreeModel;
 import org.jeecg.modules.system.service.ISysDepartService;
 import org.jeecg.modules.system.util.FindsDepartsChildrenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

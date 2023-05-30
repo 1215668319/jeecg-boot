@@ -1,6 +1,5 @@
 package org.jeecg.modules.system.controller;
 
-import cn.hutool.core.util.RandomUtil;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.xkcoding.justauth.AuthRequestFactory;
@@ -35,7 +34,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.util.Date;
 import java.util.List;
 
 /**

@@ -6,7 +6,6 @@ import java.util.Arrays;
 import javax.servlet.http.HttpServletRequest;
 
 import org.jeecg.common.api.vo.Result;
-import org.jeecg.common.constant.CommonConstant;
 import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.modules.system.entity.SysLog;

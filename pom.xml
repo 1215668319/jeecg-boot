@@ -138,6 +138,26 @@
 			<artifactId>pegdown</artifactId>
 			<version>${pegdown.version}</version>
 		</dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-openfeign-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-redis</artifactId>
+		</dependency>
+        <dependency>
+            <groupId>org.jeecgframework.boot</groupId>
+            <artifactId>jeecg-boot-common</artifactId>
+        </dependency>
+		<dependency>
+			<groupId>org.jeecgframework.boot</groupId>
+			<artifactId>jeecg-boot-base-core</artifactId>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
@@ -470,5 +490,6 @@
 				<module>jeecg-server-cloud</module>
 			</modules>
 		</profile>
+
     </profiles>
 </project>

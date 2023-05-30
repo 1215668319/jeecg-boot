@@ -11,16 +11,15 @@ import org.apache.commons.fileupload.FileItemStream;
 import org.jeecg.common.constant.CommonConstant;
 import org.jeecg.common.constant.SymbolConstant;
 import org.jeecg.common.util.CommonUtils;
+import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.common.util.filter.FileTypeFilter;
 import org.jeecg.common.util.filter.StrAttackFilter;
-import org.jeecg.common.util.oConvertUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-import java.net.URLDecoder;
 import java.util.Date;
 import java.util.UUID;
 

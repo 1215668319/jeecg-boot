@@ -12,7 +12,6 @@ import cn.hutool.core.date.DateUtil;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
-import org.jeecg.common.constant.CommonConstant;
 import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.modules.monitor.domain.RedisInfo;
 import org.jeecg.modules.monitor.exception.RedisConnectException;

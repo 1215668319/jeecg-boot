@@ -2,7 +2,6 @@ package org.jeecg.modules.system.controller;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -12,7 +11,6 @@ import org.apache.shiro.SecurityUtils;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.constant.CommonConstant;
 import org.jeecg.common.system.query.QueryGenerator;
-import org.jeecg.common.aspect.annotation.AutoLog;
 import org.jeecg.common.system.vo.LoginUser;
 import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.modules.base.service.BaseCommonService;

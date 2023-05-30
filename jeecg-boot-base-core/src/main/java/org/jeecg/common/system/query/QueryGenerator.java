@@ -22,8 +22,8 @@ import org.jeecg.common.system.util.JwtUtil;
 import org.jeecg.common.system.vo.SysPermissionDataRuleModel;
 import org.jeecg.common.util.CommonUtils;
 import org.jeecg.common.util.DateUtils;
-import org.jeecg.common.util.SqlInjectionUtil;
 import org.jeecg.common.util.oConvertUtils;
+import org.jeecg.common.util.SqlInjectionUtil;
 import org.springframework.util.NumberUtils;
 
 import com.alibaba.fastjson.JSON;
@@ -837,7 +837,7 @@ public class QueryGenerator {
 		if (value == null) {
 			return "";
 		}
-		field =  alias+oConvertUtils.camelToUnderline(field);
+		field =  alias+ oConvertUtils.camelToUnderline(field);
 		QueryRuleEnum rule = QueryGenerator.convert2Rule(value);
 		return getSingleSqlByRule(rule, field, value, isString, dataBaseType);
 	}

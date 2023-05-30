@@ -8,7 +8,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.jeecg.common.config.TenantContext;
 import org.jeecg.common.constant.CommonConstant;
-import org.jeecg.common.constant.SymbolConstant;
 import org.jeecg.common.system.vo.LoginUser;
 import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.config.mybatis.MybatisPlusSaasConfig;

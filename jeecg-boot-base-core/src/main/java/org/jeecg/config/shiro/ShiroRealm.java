@@ -15,10 +15,10 @@ import org.jeecg.common.constant.CacheConstant;
 import org.jeecg.common.constant.CommonConstant;
 import org.jeecg.common.system.util.JwtUtil;
 import org.jeecg.common.system.vo.LoginUser;
+import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.common.util.RedisUtil;
 import org.jeecg.common.util.SpringContextUtils;
 import org.jeecg.common.util.TokenUtils;
-import org.jeecg.common.util.oConvertUtils;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
@@ -157,7 +157,7 @@ public class ShiroRealm extends AuthorizingRealm {
                     LoginUser loginUserFromDb = commonApi.getUserByName(username);
                     if (oConvertUtils.isNotEmpty(loginUserFromDb.getRelTenantIds())) {
                         String[] newArray = loginUserFromDb.getRelTenantIds().split(",");
-                        if (oConvertUtils.isIn(contextTenantId, newArray)) { 
+                        if (oConvertUtils.isIn(contextTenantId, newArray)) {
                             isAuthorization = true;
                         }
                     }

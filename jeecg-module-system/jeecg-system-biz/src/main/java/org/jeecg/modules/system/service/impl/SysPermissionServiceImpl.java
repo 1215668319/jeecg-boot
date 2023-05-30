@@ -206,7 +206,7 @@ public class SysPermissionServiceImpl extends ServiceImpl<SysPermissionMapper, S
 			
 			//如果当前菜单的父菜单变了，则需要修改新父菜单和老父菜单的，叶子节点状态
 			String pid = sysPermission.getParentId();
-            boolean flag = (oConvertUtils.isNotEmpty(pid) && !pid.equals(p.getParentId())) || oConvertUtils.isEmpty(pid)&&oConvertUtils.isNotEmpty(p.getParentId());
+            boolean flag = (oConvertUtils.isNotEmpty(pid) && !pid.equals(p.getParentId())) || oConvertUtils.isEmpty(pid)&& oConvertUtils.isNotEmpty(p.getParentId());
             if (flag) {
 				//a.设置新的父菜单不为叶子节点
 				this.sysPermissionMapper.setMenuLeaf(pid, 0);

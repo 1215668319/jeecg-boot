@@ -1,6 +1,5 @@
 package org.jeecg.modules.system.service.impl;
 
-import cn.hutool.core.collection.CollectionUtil;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -39,11 +38,9 @@ import org.jeecg.modules.system.vo.lowapp.DepartAndUserInfo;
 import org.jeecg.modules.system.vo.lowapp.DepartInfo;
 import org.jeecg.modules.system.vo.lowapp.UpdateDepartInfo;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
